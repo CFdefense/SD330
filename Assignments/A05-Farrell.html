@@ -1,10 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-    <header>
-
-    </header>
+    <head>
+        <title>A05 Christian Farrell</title>
+        <style>
+            body {
+                background-color: #f0f0f0; /* Light grey background */
+                color: #333; /* Dark grey text */
+                font-family: Arial, sans-serif; /* Font style */
+            }
+            header {
+                background-color: #007BFF; /* Blue header */
+                color: white; /* White text in header */
+                padding: 10px; /* padding around header */
+                text-align: center; /* align the text to the center */
+            }
+            h1 {
+                color: #FF5733; /* Orange heading */
+            }
+            ul {
+                list-style-type: square; /* Square bullets */
+            }
+            button {
+                background-color: #28A745; /* Green button */
+                color: white; /* White text on button */
+                border: none; /* Remove border */
+                padding: 10px 15px; /* Padding on each side */
+                cursor: pointer; /* indicates you can click the button */
+                margin: 5px; /* nice margin around */
+            }
+            button:hover {
+                background-color: #218838; /* Darker green on hover of button */
+            }
+            footer {
+                text-align: center; /* center footer */
+                margin-top: 20px; /* give margin for top */
+                color: #666; /* Grey footer text */
+            }
+        </style>
+    </head>
     
-    <footer>
+    <body>
+        <header>Christian Farrell, 09/19/2024</header>
+
+        <h1><strong>Questions</strong></h1>
+        <ul>
+            <li>1. What are the five or six key issues we need to focus on when gathering data? Provide an explanatory sentence for each. </li>
+            <li>2. What are the six data techniques (in section 8.7).   Consider creating a Marist parking app -  would techniques would you use for capturing data requirements? </li>
+            <li>3. What is the format (syntax) of a user story?</li>
+            <li>4. What are the five types of requirements, and list at least one of each type. </li>
+            <li>5. What are the seven product dimensions?</li>
+            <li>6. Compare and contrast persona and scenario.</li>
+        </ul>
+        <p id="questionAnswers"></p>
         
+        <p>
+            <button onclick = updateQuestion(1)> Question 1 </button> 
+            <button onclick = updateQuestion(2)> Question 2 </button> 
+            <button onclick = updateQuestion(3)> Question 3 </button> 
+            <button onclick = updateQuestion(4)> Question 4 </button> 
+            <button onclick = updateQuestion(5)> Question 5 </button> 
+            <button onclick = updateQuestion(6)> Question 6 </button> 
+        </p>
+        
+    </body>
+
+    <footer>
+        Christian Farrell, 09/19/2024
     </footer>
+
+    <script>
+        function updateQuestion(questionNumber) {
+            var answer = document.getElementById("questionAnswers");
+            switch(questionNumber) {
+                case 1:
+                    answer.innerHTML = `
+                The 6 issues we need to focus on are goal setting, identifying participants, the relationship between the data  collector and the data  provider, ethical considerations of collecting data, triangulation, and pilot studies. 
+                <li>Goal Setting: Establishing clear objectives is crucial for data gathering, as it defines the purpose and direction of the study, ensuring that the data collected aligns with the intended outcomes.</li>
+                <li>Identifying Participants: Carefully selecting the appropriate participants is essential to ensure that the data collected is representative and relevant, which directly impacts the validity and reliability of the findings.</li>
+                <li>Relationship Between Data Collector and Data Provider: Understanding the dynamics between the data collector and the data provider is important, as this relationship can influence the quality of the data, including factors like trust and communication.</li>
+                <li>Ethical Considerations: Adhering to ethical guidelines when collecting data is vital to protect participants' rights and privacy, fostering trust and encouraging honest and accurate responses.</li>
+                <li>Triangulation: Utilizing multiple methods or sources of data (triangulation) enhances the credibility and validity of the findings by cross-verifying information and reducing bias.</li>
+                <li>Pilot Studies: Conducting pilot studies allows researchers to test their data collection methods on a smaller scale, helping to identify potential issues and refine the approach before the full study is implemented.</li>
+            `;
+                    break;
+                case 2:
+                    answer.innerHTML = `
+                    The 6 Data Techniques are all very effective and can all be used to create a Marist Parking Application
+                    <li>Interviews: Conducting interviews allows for in-depth exploration of user experiences and needs related to parking.</li>
+                    <li>Focus Groups: Focus groups facilitate discussions among diverse participants to identify common themes and conflicting opinions about parking features. </li>
+                    <li>Questionnaires: Distributing questionnaires enables the collection of quantitative and qualitative data from a larger audience about their parking preferences and frustrations. </li>
+                    <li>Direct Observation in the Wild: Observing users in their natural parking environments provides valuable insights into real-time behaviors and challenges they face.</li>
+                    <li>Direct Observation in a Controlled Environment: Usability testing in a controlled setting allows researchers to capture detailed interactions with the app prototype without external distractions. </li>
+                    <li> Indirect Observation: Using indirect observation methods, such as automated logging or participant diaries, helps gather long-term data on parking behaviors without influencing users' actions. </li>
+                    `;
+                    break;
+                case 3:
+                    answer.innerHTML = "The Syntax of a user story is 'As a role, I want a behavior so that I can benefit'";
+                    break;
+                case 4:
+                    answer.innerHTML = `
+                    The 5 Types of Requirements Are: 
+                    <li>Functional Requirement: The app must allow users to search for available parking spaces by location and time.</li>
+                    <li>Data Requirement: The app must store user information, including payment details and parking history.</li>
+                    <li>Environment Requirement: The app must be compatible with both iOS and Android operating systems.</li>
+                    <li>User Requirement: Users must be able to filter parking options based on price and distance from their destination.</li>
+                    <li>Usability Requirement: The app must have an intuitive interface that enables users to complete a parking reservation within three clicks.</li>
+                    `
+                    break;
+                case 5:
+                    answer.innerHTML = `The 7 Product Dimensions Are:
+                    <li>Functionality: The features and capabilities of the product that fulfill user needs.</li>
+                    <li>Reliability: The ability of the product to perform consistently over time without failure.</li>
+                    <li>Usability: The ease with which users can interact with and use the product.</li>
+                    <li>Performance: The speed and efficiency with which the product operates under specified conditions.</li>
+                    <li>Supportability: The extent to which the product can be maintained, repaired, or upgraded.</li>
+                    <li>Aesthetics: The visual appeal and design of the product, including its style and appearance.</li>
+                    <li>Cost: The total cost of ownership, including purchase price, maintenance, and operational costs.</li>
+                    `;
+                    break;
+                case 6:
+                    answer.innerHTML = `
+                    <strong> Differences: </strong> A <strong>persona</strong> is a fictional character that represents a user type, helping designers understand user needs, behaviors, and motivations. In contrast, a <strong>scenario</strong> is a narrative that describes how a persona interacts with a product to achieve a specific goal, illustrating user experience and workflows.
+                    <br /> 
+                    <strong> Similarities: </strong>Personas and scenarios are similar in that both are tools used in user-centered design to improve understanding of users and their needs. They both rely on research and data to inform design decisions, ensuring that products are tailored to real user experiences and contexts.`;
+                    break;
+            }
+        }
+    </script>
 </html>
