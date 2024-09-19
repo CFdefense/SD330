@@ -8,11 +8,52 @@
 <body> 
     <h1> Module 3: Input Fields and JavaScript </h1>
     <h2> &#10004; Input Fields </h2>
+    <ul>
+        <li><strong> Here is an input text box </strong></li>
+        <br> Enter First Name <input type="text" id="firstName">
+        <br> Enter Last Name <input type="text" id="lastName" value="Smith">
+        <br> Enter Address <input type="text" id="address" autofocus>
+        <br> Enter Zip Code <input type="text" id="zipCode" maxlength=5>
+        <br> Enter Comments <input type="text" id="comments" size = 5>
+        <li><strong>Here is an Email Input</strong><input type="text"></li>
+        <li><strong>Here is a File Input</strong><input type="file"></li>
+        <li><strong>Here is a Date Input</strong><input type="date"></li>
+    </ul>
     <h2> &#10004; Javascript </h2>
-
+        <p id="someText"></p>
+        <p> <button onclick = doSomething()> First Button </button>
+        <p> <button onclick = updateText()> Second Button </button>
+        <p> <button onclick = updateLastName()> Farrell </button>
+        </p>
     <footer>
         <hr>
         <small> &copy; A. Tokash - September 12, 2023 </small>
     </footer>
+
+    <script>
+        /*function doSomething() {
+            alert("Our First JS Button");
+        }
+        */
+       /* function doSomething() {
+        var element = document.getElementById("firstName");
+        var firstName = element.value
+        alert("Your first name is " + firstName + "!");
+       }
+        */
+       function doSomething() {
+        var element = document.getElementById("firstName");
+        var firstName = element.value;
+        alert(firstName);
+       }
+       function updateText() {
+        var someText = document.getElementById("someText");
+        someText.textContent = "Were Writing this With JS!";
+       }
+       function updateLastName() {
+        var someText = document.getElementById("lastName");
+        someText.value = "Farrell";
+       }
+    </script>
 </body>
 </html>
