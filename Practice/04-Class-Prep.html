@@ -3,16 +3,45 @@
 <head>
     <title> Module 4 </title>
     <meta charset="UTF-8">
+
+    <style>
+        body { 
+            background-color: tan;
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            color: red;
+        }
+        p {
+            font-size: large;
+        }
+        h2 {
+            color: green;
+        }
+    </style>
 </head>
 
 <body>
     <h1> Module 4: An Introduction to CSS </h1>
+    <h2> this is a header </h2>
 
-    <p> Here is a <a href ="">link</a> to my vision board\
-    <p> An "affordance" is a tbd.
-    <p> A "signifier" is a tbd.
-    <p> A "constraint" is a tbd.
-    <p> Here is an image: <img src = "images/cat.jpg" alt = "cat">
+    <div id="div1" style="color: purple;">
+        Here is a <a href ="">link</a> to my vision board
+        <button onclick=changeColorDivOne()>Change my Color</button>
+    </div> 
+    <div id = "div2" style="color:green"> 
+        An "affordance" is a tbd.
+    </div> 
+    <div id = "div3" style="color:blue">
+        A "signifier" is a tbd.
+    </div>
+    <div id = "div4">
+        A "constraint" is a tbd.
+    </div>
+    <div id = "div5">
+        Here is an image: <img src = "images/cat.jpg" alt = "cat">
+    </div>
 
     <footer>
         <hr>
@@ -20,4 +49,20 @@
     </footer>
 
 </body>
+
+<footer>
+    <script>
+        function changeColorDivOne() {
+            var division = document.getElementById("div1");
+            if(division.style.color == "purple") {
+                division.style.color = "green";
+            } else {
+                division.style.color = "purple";
+            }
+            
+        }
+    
+    </script>
+</footer>
+
 </html>
