@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>A06-Farrell</title>
+        <style>
+            body {
+                background-color: rgb(113, 113, 206);
+
+            }
+        </style>
+    </head>
+    <body style="color: white">
+        <div class="flex" style="background-color: red;">
+            <h2> Attention </h2>
+            <ul style="margin-top: -20px;">
+                <li>Ensure clear visual hierarchy</li>
+                <li>Use color contrast to highlight important elements</li>
+                <li>Minimize distractions in the interface</li>
+            </ul>
+        </div>
+        <div class="flex" style="background-color: orange;">
+            <h2> Perception </h2>
+            <ul style="margin-top: -20px;">
+                <li>Use familiar icons and visual metaphors</li>
+                <li>Keep the design simple and intuitive</li>
+                <li>Leverage sensory feedback, like sound and touch</li>
+            </ul>
+        </div>
+        <div class="flex" style="background-color: yellow;">
+            <h2> Memory </h2>
+            <ul style="margin-top: -20px;">
+                <li>Limit the amount of information users must remember</li>
+                <li>Provide easy access to frequently used features</li>
+                <li>Use consistent design patterns</li>
+            </ul>
+        </div>
+        <div class="flex" style="background-color: green;">
+            <h2> Learning </h2>
+            <ul style="margin-top: -20px;">
+                <li>Provide clear, step-by-step guidance</li>
+                <li>Offer tutorials or tooltips for new users</li>
+                <li>Design for incremental learning, introducing features gradually</li>
+            </ul>
+        </div>
+        <div class="flex" style="background-color: blue;">
+            <h2> Problem-Solving </h2>
+            <ul style="margin-top: -20px;">
+                <li>Offer clear pathways to accomplish tasks</li>
+                <li>Provide feedback and help users recover from errors</li>
+                <li>Use logical workflows and minimize cognitive overload</li>
+            </ul>
+        </div>
+        <div class="flex" style="background-color: indigo;">
+            <h2> Decision-Making </h2>
+            <ul style="margin-top: -20px;">
+                <li>Present choices clearly, with concise information</li>
+                <li>Highlight recommended or default options</li>
+                <li>Reduce the number of choices when possible</li>
+            </ul>
+        </div>
+        <button onclick=changeColors() style="font-size: 20px; height: 80px; width: 120px; font-weight: bold; color: red; background: black; margin: 5px;">Press me</button>
+    </body>
+    <footer>
+        <script>
+            function changeColors() {
+                let divs = document.querySelectorAll('.flex'); // select elems of flex class
+                divs.forEach(div => {
+                    div.style.backgroundColor = 'black'; // Change background color
+            });
+            }
+        </script>
+        <small>&copy Christian Farrell 9/28/24</small>
+    </footer>
+</html>
