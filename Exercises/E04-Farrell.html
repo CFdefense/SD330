@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fridge App</title>
+    <style>
+        #fridge {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #7777a8, #1f8eff);
+        }
+
+        #fridgeButton {
+            background: linear-gradient(135deg, #9099dd, #0c263f);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        /* Hover Effects */
+        #fridgeButton:hover {
+            background: linear-gradient(135deg, #5b6efb, #1c7edb);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-3px);
+        }
+
+        /* Active Button Styling */
+        #fridgeButton:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Button Text Change */
+        #fridgeButton:focus {
+            outline: none;
+        }
+
+        #interactiveGroup {
+            display: flex;
+            width: 200px;
+            height: 900px;
+            background: linear-gradient(135deg, #7681d1, #0e6abb);
+
+            float: right;
+            margin: 10px;
+            width: 70%;
+        }
+
+        #leftSide {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Fridge Group -->
+    <div id="fridge">
+        <div id="leftSide">
+            <h1 align="center"
+                style="font-weight: bold; font-family: 'Courier New', Courier, monospace; margin-bottom: 25px; ">
+                JavaScript Fridge
+            </h1>
+            <!-- Fridge Button-->
+            <button onclick=openFridge() id="fridgeButton" style="margin-bottom: 25px;"> Open Fridge </button>
+
+            <!-- Fridge Image -->
+            <img src="https://i.ibb.co/PDWZbGM/fridge-in-cartoon-style-open-and-closed-vector-18299894-2.jpg"
+                alt="fridge-in-cartoon-style-open-and-closed-vector-18299894-2" id="fridgeImage"
+                style="height: 800px; margin-bottom: 55px;">
+        </div>
+        <!-- Interactive Group -->
+        <div id="interactiveGroup">
+            <!-- Clock Element -->
+
+            <!-- Toggle Element -->
+
+            <!-- Clock Element -->
+
+            <!-- Button Elements -->
+
+            <!-- Screen Element -->
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+<footer>
+    <small>&copy Christian Farrell 10/10/24</small>
+    <script>
+        function openFridge() {
+            // Get Image and Button State
+            var image = document.getElementById("fridgeImage");
+            var button = document.getElementById("fridgeButton")
+
+            // change fridge image
+            if (image.src.includes("https://i.ibb.co/PDWZbGM/fridge-in-cartoon-style-open-and-closed-vector-18299894-2.jpg")) {
+                image.src = "https://i.ibb.co/2v74j92/fridge-in-cartoon-style-open-and-closed-vector-18299894-1.jpg";
+            } else {
+                image.src = "https://i.ibb.co/PDWZbGM/fridge-in-cartoon-style-open-and-closed-vector-18299894-2.jpg";
+            }
+
+            // change button text
+            if (button.innerHTML.includes(" Open Fridge ")) {
+                button.innerHTML = " Close Fridge ";
+            } else {
+                button.innerHTML = " Open Fridge ";
+            }
+        }
+    </script>
+</footer>
+
+</html>
