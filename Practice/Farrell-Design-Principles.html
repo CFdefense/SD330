@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Design Principles</title>
+    <style>
+        h1 {
+            /* Alignment */
+            position: absolute;
+            top: 0;
+            /* Styling */
+            margin: 40px;
+            font-size: xxx-large;
+            color: white;
+            font-weight: bold;
+            text-shadow: 4px 4px 4px black;
+        }
+
+        body {
+            /* Alignment */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* Styling */
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #32a38d, #031d2e);
+        }
+
+        .container {
+            /* Alignment */
+            display: flex;
+            flex-direction: column;
+            margin-top: 90pxk;
+            /* Styling */
+        }
+
+        .row {
+            /* Alignment */
+            display: flex;
+            justify-content: space-between;
+            /* Styling */
+            margin-bottom: 10px;
+        }
+
+        .box {
+            /* Alignment */
+            width: 500px;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            text-align: center;
+            /* Styling */
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+            border-radius: 50px;
+            margin: 30px;
+        }
+
+        .title {
+            /* Alignment */
+            position: absolute;
+            top: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            /* Styling */
+            font-size: x-large;
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 4px 4px black;
+
+        }
+
+        footer {
+            /* Alignment */
+            position: absolute;
+            bottom: 2%;
+            /* Styling */
+            font-weight: bold;
+            color: white;
+        }
+
+        p {
+            /* Alignment */
+            /* Styling */
+            margin: 10px;
+            line-height: 1.6;
+        }
+
+        h2 {
+            margin-top: 15px;
+            margin-bottom: -1px;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Design Principles</h1>
+    <div class="container">
+        <div class="row">
+            <div class="box" style="background-color: #2ac4a5;">
+                <h3 class="title">User-Centric Design</h3>
+                <h2>Do's</h2>
+                <p>Conduct user research to understand user needs.</p>
+                <p>Create user personas to guide design based on real user data.</p>
+                <p>Involve users in testing to gather active feedback.</p>
+                <p>Ensure users feel in control throughout.</p>
+                <h2>Dont's</h2>
+                <p>Assume you know what users want without research.</p>
+                <p>Neglect user feedback after the initial testing phase.</p>
+                <p>Design solely based on personal choice instead of user needs.</p>
+                <p>Prioritize aesthetics over functionality.</p>
+            </div>
+            <div class="box" style="background-color: #17aaaf;">
+                <h3 class="title">Accessibility</h3>
+                <h2>Do's</h2>
+                <p>Ensure sufficient color contrast for readability.</p>
+                <p>Include alternative text for images to aid visually impaired.</p>
+                <p>Use semantic HTML elements.</p>
+                <p>Provide keyboard navigation to make all elements accessable.</p>
+                <h2>Dont's</h2>
+                <p>Include alternative text for images to aid visually impaired.</p>
+                <p>Neglect accessibility testing with disabled users.</p>
+                <p>Rely solely on color to convey information.</p>
+                <p>Provide transcripts for multimedia content.</p>
+            </div>
+            <div class="box" style="background-color: #2980b9;">
+                <h3 class="title">Consistency</h3>
+                <h2>Do's</h2>
+                <p>Maintain a consistent visual style.</p>
+                <p>Standardize interactions for similar actions.</p>
+                <p>Use consistent terminology throughout.</p>
+                <p>Use a uniform color palette.</p>
+                <h2>Dont's</h2>
+                <p>Mix different styles for similar elements.</p>
+                <p>Change navigation patterns frequently.</p>
+                <p>Ignore established brand guidelines and design language</p>
+                <p>Use varying terms for the same action.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box" style="background-color: #17aaaf;">
+                <h3 class="title">Feedback</h3>
+                <h2>Do's</h2>
+                <p>Provide clear error and slip messages.</p>
+                <p>Display loading indicators and updates.</p>
+                <p>Provide feedback to users within half a second.</p>
+                <p>Reward positive actions with visual or audible cues.</p>
+                <h2>Dont's</h2>
+                <p>Leave users guessing after an interaction.</p>
+                <p>Neglect to acknowledge user input despite slipping.</p>
+                <p>Overwhelm users with TOO much feedback.</p>
+                <p>Use overwhelming pop-ups for minor actions.</p>
+            </div>
+            <div class="box" style="background-color: #2980b9;">
+                <h3 class="title">Simplicity</h3>
+                <h2>Do's</h2>
+                <p>Emphasize minimalism while reducing distractions.</p>
+                <p>Organize information logically facilitating easy navigation.</p>
+                <p>Highlight clear calls-to-action to guide users throughout.</p>
+                <p>Use simple and easy to understand language.</p>
+                <h2>Dont's</h2>
+                <p>Overload users with excessive information.</p>
+                <p>Hide important features within menus or dropdowns.</p>
+                <p>Use complex jargon and unclear icons</p>
+                <p>Clutter the interface with content.</p>
+            </div>
+            <div class="box" style="background-color: #0e4b74;">
+                <h3 class="title">Adaptability</h3>
+                <h2>Do's</h2>
+                <p>Use progressive disclosure of information to prevent overload</p>
+                <p>Allow user customization from themes to preferences.</p>
+                <p>Test designs in different screen and browser environments.</p>
+                <p>Create adaptive typography at all screen sizes</p>
+                <h2>Dont's</h2>
+                <p>Ignore different user device contexts.</p>
+                <p>Make essential features device-dependent.</p>
+                <p>Assume high-speed internet for all users.</p>
+                <p>Assume users all speak the same language.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <small>&copy Christian Farrell 17/10/24</small>
+</footer>
+
+</html>
