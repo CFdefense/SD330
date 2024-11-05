@@ -1,0 +1,153 @@
+#fridge {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #7777a8, #1f8eff);
+}
+
+#fridgeButton {
+    background: linear-gradient(135deg, #9099dd, #0c263f);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Hover Effects */
+#fridgeButton:hover {
+    background: linear-gradient(135deg, #5b6efb, #1c7edb);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+/* Active Button Styling */
+#fridgeButton:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Text Change */
+#fridgeButton:focus {
+    outline: none;
+}
+
+#interactiveGroup {
+    display: flex;
+    width: 200px;
+    height: 900px;
+    background: linear-gradient(135deg, #7681d1, #0e6abb);
+    float: right;
+    margin: 10px;
+    width: 70%;
+}
+
+#leftSide {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Toggle button */
+#toggleElement {
+    background: linear-gradient(135deg, #7681d1, #0e6abb);
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 7px solid black;
+}
+
+/* For on span */
+#toggleElement h1 span {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* For off span */
+#toggleElement h1 span {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Styles for clock */
+#clockElement {
+    position: absolute;
+    right: 10%;
+    bottom: 72%;
+    padding: 15px 15px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 68px;
+    background: linear-gradient(135deg, #7681d1, #0e6abb);
+    border-radius: 15%;
+    border: 8px solid black;
+}
+
+/* Default non-bold for toggle element*/
+.normal {
+    font-weight: normal;
+}
+
+/* When bold for toggle element */
+.bold {
+    font-weight: bold;
+}
+
+/* ul elements for choosing mode */
+#interactiveGroup ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-around;
+}
+
+#interactiveGroup ul li {
+    margin-right: 10px;
+}
+
+#interactiveGroup ul li button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1f8eff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 5px solid black;
+}
+
+#interactiveGroup ul li button:hover {
+    background-color: #0c263f;
+    transform: scale(1.05);
+}
+
+#buttonElements {
+    position: absolute;
+    top: 30%;
+    right: 25%;
+    display: none;
+}
+
+#displayElement {
+    position: absolute;
+    left: 45%;
+    scale: 120%;
+    bottom: 20%;
+    display: hidden;
+}

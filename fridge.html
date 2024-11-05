@@ -1,307 +1,55 @@
 <!DOCTYPE html>
+
 <html lang="en">
+    <head>
+        <title>Fridge App</title>
+        <link rel="stylesheet" href="/fridge/fridge.css">
+    </head>
 
-<head>
-    <title>Fridge App</title>
-    <style>
-        #fridge {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 90%;
-            margin: 0 auto;
-            padding: 20px;
-            background: linear-gradient(135deg, #7777a8, #1f8eff);
-        }
+    <body>
+        <!-- Fridge Group -->
+        <div id="fridge">
+            <div id="leftSide">
+                <h1 align="center"
+                    style="font-weight: bold; font-family: 'Courier New', Courier, monospace; margin-bottom: 25px;">
+                    JavaScript Fridge
+                </h1>
+                <!-- Fridge Button-->
+                <button onclick="openFridge()" id="fridgeButton" style="margin-bottom: 25px;">Open Fridge</button>
 
-        #fridgeButton {
-            background: linear-gradient(135deg, #9099dd, #0c263f);
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 30px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-            transition: all 0.3s ease;
-            outline: none;
-        }
-
-        /* Hover Effects */
-        #fridgeButton:hover {
-            background: linear-gradient(135deg, #5b6efb, #1c7edb);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-            transform: translateY(-3px);
-        }
-
-        /* Active Button Styling */
-        #fridgeButton:active {
-            transform: translateY(1px);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Button Text Change */
-        #fridgeButton:focus {
-            outline: none;
-        }
-
-        #interactiveGroup {
-            display: flex;
-            width: 200px;
-            height: 900px;
-            background: linear-gradient(135deg, #7681d1, #0e6abb);
-            float: right;
-            margin: 10px;
-            width: 70%;
-        }
-
-        #leftSide {
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* Toggle button */
-        #toggleElement {
-            background: linear-gradient(135deg, #7681d1, #0e6abb);
-            width: 200px;
-            height: 200px;
-            margin-top: 50px;
-            margin-left: 50px;
-            border-radius: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 7px solid black;
-        }
-
-        /* For on span */
-        #toggleElement h1 span {
-            display: block;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        /* For off span */
-        #toggleElement h1 span {
-            display: block;
-            text-align: center;
-            margin-bottom: 10px;
-            cursor: pointer;
-        }
-
-        /* Styles for clock */
-        #clockElement {
-            position: absolute;
-            right: 10%;
-            bottom: 72%;
-            padding: 15px 15px;
-            font-weight: bold;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 68px;
-            background: linear-gradient(135deg, #7681d1, #0e6abb);
-            border-radius: 15%;
-            border: 8px solid black;
-        }
-
-        /* Default non-bold for toggle element*/
-        .normal {
-            font-weight: normal;
-        }
-
-        /* When bold for toggle element */
-        .bold {
-            font-weight: bold;
-        }
-
-        /* ul elements for choosing mode */
-        #interactiveGroup ul {
-            display: flex;
-            list-style-type: none;
-            padding: 0;
-            justify-content: space-around;
-        }
-
-        #interactiveGroup ul li {
-            margin-right: 10px;
-        }
-
-        #interactiveGroup ul li button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #1f8eff;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            border: 5px solid black;
-        }
-
-        #interactiveGroup ul li button:hover {
-            background-color: #0c263f;
-            transform: scale(1.05);
-        }
-
-        #buttonElements {
-            position: absolute;
-            top: 30%;
-            right: 25%;
-            display: none;
-        }
-
-        #displayElement {
-            position: absolute;
-            left: 45%;
-            scale: 120%;
-            bottom: 20%;
-            display: hidden;
-        }
-    </style>
-</head>
-
-<body>
-    <!-- Fridge Group -->
-    <div id="fridge">
-        <div id="leftSide">
-            <h1 align="center"
-                style="font-weight: bold; font-family: 'Courier New', Courier, monospace; margin-bottom: 25px;">
-                JavaScript Fridge
-            </h1>
-            <!-- Fridge Button-->
-            <button onclick="openFridge()" id="fridgeButton" style="margin-bottom: 25px;">Open Fridge</button>
-
-            <!-- Fridge Image -->
-            <img src="https://live.staticflickr.com/65535/54060938725_e00a1947d7_z.jpg" alt="Fridge" id="fridgeImage"
-                style="height: 800px; margin-bottom: 55px;">
-        </div>
-        <!-- Interactive Group -->
-        <div id="interactiveGroup">
-            <!-- Toggle Element -->
-            <div id="toggleElement">
-                <h1><span id="onToggle" class="normal" onclick="toggleElement('on')">ON</span><span class="bold"
-                        id="offToggle" onclick="toggleElement('off')">OFF</span></h1>
+                <!-- Fridge Image -->
+                <img src="https://live.staticflickr.com/65535/54060938725_e00a1947d7_z.jpg" alt="Fridge" id="fridgeImage"
+                    style="height: 800px; margin-bottom: 55px;">
             </div>
-            <!-- Clock Element -->
-            <div id="clockElement">00:00:00</div>
-            <!-- Button Elements -->
-            <div id="buttonElements">
-                <ul>
-                    <li id="netflixElement"><button onclick="changeDisplay('netflix')">Netflix</button></li>
-                    <li id="browserElement"><button onclick="changeDisplay('browser')">Browser</button></li>
-                    <li id="settingsElement"><button onclick="changeDisplay('settings')">Settings</button></li>
-                    <li id="temperatureElement"><button onclick="changeDisplay('temperature')">Temperature</button></li>
-                </ul>
-            </div>
-            <!-- Screen Element -->
-            <div id="displayElement">
-                <img id="displayImage" src="" style="border-radius: 20%;">
+            <!-- Interactive Group -->
+            <div id="interactiveGroup">
+                <!-- Toggle Element -->
+                <div id="toggleElement">
+                    <h1><span id="onToggle" class="normal" onclick="toggleElement('on')">ON</span><span class="bold"
+                            id="offToggle" onclick="toggleElement('off')">OFF</span></h1>
+                </div>
+                <!-- Clock Element -->
+                <div id="clockElement">00:00:00</div>
+                <!-- Button Elements -->
+                <div id="buttonElements">
+                    <ul>
+                        <li id="netflixElement"><button onclick="changeDisplay('netflix')">Netflix</button></li>
+                        <li id="browserElement"><button onclick="changeDisplay('browser')">Browser</button></li>
+                        <li id="settingsElement"><button onclick="changeDisplay('settings')">Settings</button></li>
+                        <li id="temperatureElement"><button onclick="changeDisplay('temperature')">Temperature</button></li>
+                    </ul>
+                </div>
+                <!-- Screen Element -->
+                <div id="displayElement">
+                    <img id="displayImage" src="" style="border-radius: 20%;">
+                </div>
             </div>
         </div>
-    </div>
+    </body>
 
-</body>
+    <footer>
+        <small>&copy Christian Farrell 10/10/24</small>
+    </footer>
 
-<footer>
-    <small>&copy Christian Farrell 10/10/24</small>
-    <script>
-        function openFridge() {
-            // Get Image and Button State
-            var image = document.getElementById("fridgeImage");
-            var button = document.getElementById("fridgeButton");
-
-            // Change fridge image
-            if (image.src.includes("https://live.staticflickr.com/65535/54060939000_e69c4bd976_z.jpg")) {
-                image.src = "https://live.staticflickr.com/65535/54060938725_e00a1947d7_z.jpg";
-            } else {
-                image.src = "https://live.staticflickr.com/65535/54060939000_e69c4bd976_z.jpg";
-            }
-
-            // Change button text
-            if (button.innerHTML.includes("Open Fridge")) {
-                button.innerHTML = "Close Fridge";
-            } else {
-                button.innerHTML = "Open Fridge";
-            }
-        }
-
-        function toggleElement(state) {
-            var onToggle = document.getElementById("onToggle");
-            var offToggle = document.getElementById("offToggle");
-            var buttonElements = document.getElementById("buttonElements");
-            var displayElement = document.getElementById("displayElement");
-
-            if (state === 'on') {
-                onToggle.classList.add('bold');
-                onToggle.classList.remove('normal');
-                offToggle.classList.add('normal');
-                offToggle.classList.remove('bold');
-
-                // Show the button elements and display
-                buttonElements.style.display = "block";
-                displayElement.style.display = "block";
-            } else {
-                offToggle.classList.add('bold');
-                offToggle.classList.remove('normal');
-                onToggle.classList.add('normal');
-                onToggle.classList.remove('bold');
-
-                // Hide the button elements and display
-                buttonElements.style.display = "none";
-                displayElement.style.display = "none";
-            }
-        }
-
-        function updateClock() {
-            var now = new Date();
-            var hours = String(now.getHours()).padStart(2, '0');
-            var minutes = String(now.getMinutes()).padStart(2, '0');
-            var seconds = String(now.getSeconds()).padStart(2, '0');
-            var currentTime = hours + ':' + minutes + ':' + seconds;
-
-            document.getElementById('clockElement').innerText = currentTime;
-        }
-
-        // Update the clock every second
-        setInterval(updateClock, 1000);
-        updateClock();
-
-        function changeDisplay(option) {
-            var imageSrc = "";
-            var displayImage = document.getElementById("displayImage");
-
-            switch (option) {
-                case 'netflix':
-                    imageSrc = "https://live.staticflickr.com/65535/54060866584_bd13fb0d5d_z.jpg";
-                    break;
-                case 'browser':
-                    imageSrc = "https://live.staticflickr.com/65535/54060992255_8d1b3ed83e_z.jpg";
-                    break;
-                case 'settings':
-                    imageSrc = "https://live.staticflickr.com/65535/54060540036_1037a45c0b_z.jpg";
-                    break;
-                case 'temperature':
-                    imageSrc = "https://live.staticflickr.com/65535/54060539951_87e428d917_z.jpg";
-                    break;
-            }
-
-            // Update image and button styles
-            displayImage.src = imageSrc;
-            displayImage.style.display = "block";
-
-            // Reset styles for all buttons
-            var buttons = document.querySelectorAll("#buttonElements button");
-            buttons.forEach(button => {
-                button.style.fontWeight = 'normal'; // Reset to normal
-            });
-
-            // Bold the clicked button
-            var clickedButton = Array.from(buttons).find(button => button.innerText.toLowerCase() === option);
-            if (clickedButton) {
-                clickedButton.style.fontWeight = 'bold';
-            }
-        }
-    </script>
-</footer>
-
+    <script src="/fridge/fridge.js"></script>
 </html>
