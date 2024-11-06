@@ -29,19 +29,56 @@
                             id="offToggle" onclick="toggleElement('off')">OFF</span></h1>
                 </div>
                 <!-- Clock Element -->
-                <div id="clockElement">00:00:00</div>
+                <div id="clockElement">
+                    00:00:00
+                </div>
+                <div id="toggleClock" style="position: absolute; right: 17%;">
+                    <button onclick="toggleClockFormat()">Toggle Clock</button>
+                </div>
+                
+                
                 <!-- Button Elements -->
                 <div id="buttonElements">
                     <ul>
                         <li id="netflixElement"><button onclick="changeDisplay('netflix')">Netflix</button></li>
                         <li id="browserElement"><button onclick="changeDisplay('browser')">Browser</button></li>
+                        <li id="musicElement"><button onclick="changeDisplay('music')">Music</button></li>
                         <li id="settingsElement"><button onclick="changeDisplay('settings')">Settings</button></li>
                         <li id="temperatureElement"><button onclick="changeDisplay('temperature')">Temperature</button></li>
+                        <li id="weatherElement"><button onclick="changeDisplay('weather')">Weather</button></li>
+                        <li id="timerElement"><button onclick="changeDisplay('timer')">Timer</button></li>
+                        <li id="listElement"><button onclick="changeDisplay('list')">Shopping List</button></li>
                     </ul>
                 </div>
+                
                 <!-- Screen Element -->
                 <div id="displayElement">
-                    <img id="displayImage" src="" style="border-radius: 20%;">
+                    <img id="displayImage" src="" style="border-radius: 20%; display: none;">
+                    
+                    <!-- Temperature Display -->
+                    <div id="temperatureDisplay" style="display: none; text-align: center;">
+                        <h2 style="margin-right: 130px;" id="temperatureValue">Loading...</h2>
+                        <button onclick="toggleTemperatureUnit()">Toggle °F/°C</button>
+                        <br><br>
+                        <button style="background: linear-gradient(135deg, #f7804d, #e63803);" onclick="adjustTemperature(1)">Increase</button>
+                        <button style="background: lineTemperaturear-gradient(135deg, #364be7, #032e56);" onclick="adjustTemperature(-1)">Decrease</button>
+                    </div>
+                    <!-- Timer Display -->
+                    <div id="timerDisplay" style="display: none;">
+                        <h1 id="timerHeader">1-Minute Countdown Timer</h1>
+                        <div id="timer-display">60s</div>
+                        <button id="start-btn" onclick="startTimer()">Start</button>
+                        <button id="reset-btn" onclick="resetTimer()">Reset</button>
+                      </div>
+
+                      <div id="shoppingListSection" style="display: none;">
+                        <h2 class="shopping-list-header">Shopping List</h2>
+                        <div class="shopping-list-container">
+                            <ul id="shoppingList">
+                            </ul>
+                            <input type="text" id="newItemInput" placeholder="Add a new item..." onkeydown="addItem(event)" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

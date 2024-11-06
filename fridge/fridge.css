@@ -84,18 +84,56 @@
     cursor: pointer;
 }
 
-/* Styles for clock */
+#toggleClock {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Clock Element */
 #clockElement {
     position: absolute;
     right: 10%;
     bottom: 72%;
-    padding: 15px 15px;
+    padding: 15px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     font-size: 68px;
     background: linear-gradient(135deg, #7681d1, #0e6abb);
     border-radius: 15%;
     border: 8px solid black;
+    text-align: center;
+}
+
+/* Toggle Clock Button Styling */
+#toggleClock {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Space between clock and button */
+}
+
+#toggleClock button {
+    background: linear-gradient(135deg, #9099dd, #0c263f);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#toggleClock button:hover {
+    background: linear-gradient(135deg, #5b6efb, #1c7edb);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+#toggleClock button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Default non-bold for toggle element*/
@@ -139,15 +177,138 @@
 
 #buttonElements {
     position: absolute;
-    top: 30%;
-    right: 25%;
+    top: 35%;
+    right: 12%;
     display: none;
 }
 
 #displayElement {
+    text-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    color: white;
     position: absolute;
-    left: 45%;
-    scale: 120%;
-    bottom: 20%;
+    bottom: 15%;
     display: hidden;
+    right: 22%
+}
+
+#temperatureDisplay button {
+    background: linear-gradient(135deg, #9099dd, #0c263f);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 135px;
+}
+
+#timerDisplay {
+    align-items: center;
+    justify-content: center;
+}
+
+#timerDisplay button {
+    background: linear-gradient(135deg, #9099dd, #0c263f);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 135px;
+}
+
+#timer-display {
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bold;
+    right: -30%;
+    position: relative;
+}
+
+#timerHeader {
+    position: relative;
+    right: 10%;
+}
+
+#shoppingListSection {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    width: 400px;
+    text-align: center;
+    right: 25%;
+    position: relative;
+    background: linear-gradient(135deg, #5b6efb, #1c7edb);
+
+}
+
+.shopping-list-header {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.shopping-list-container {
+    position: relative;
+    
+}
+
+#shoppingList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+#shoppingList li {
+    background-color: #ffffff;
+    padding: 12px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#shoppingList li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+#newItemInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+#newItemInput:focus {
+    border: 1px solid #3498db;
+    outline: none;
+}
+
+#newItemInput::placeholder {
+    color: #aaa;
+}
+
+#newItemInput:empty::placeholder {
+    color: #888;
 }
