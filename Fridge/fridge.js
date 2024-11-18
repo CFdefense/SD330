@@ -121,7 +121,7 @@ function changeDisplay(option) {
             displayImage.style.display = "block";
 
             // Play sound
-            var netflixSound = new Audio("fridge/static/netflix.mp3");
+            var netflixSound = new Audio("Fridge/static/netflix.mp3");
             netflixSound.play();
             break;
         case 'browser':
@@ -129,7 +129,7 @@ function changeDisplay(option) {
             displayImage.style.display = "block";
             break;
         case 'music':
-            displayImage.src = "fridge/static/spotify.jpg";
+            displayImage.src = "Fridge/static/spotify.jpg";
             displayImage.style.display = "block";
             displayImage.style.width = "640px";
             displayImage.style.height = "400px";
@@ -143,7 +143,7 @@ function changeDisplay(option) {
             displayTemperature();
             break;
         case 'weather':
-            displayImage.src = "fridge/static/weather.png";
+            displayImage.src = "Fridge/static/weather.png";
             displayImage.style.display = "block";
             displayImage.style.width = "640px";
             displayImage.style.height = "400px";
@@ -176,7 +176,7 @@ function startTimer() {
       clearInterval(timerInterval);
 
       // Play sound
-      var timerSound = new Audio("fridge/static/alarm.mp3");
+      var timerSound = new Audio("Fridge/static/alarm.mp3");
       timerSound.play();
 
       timerInterval = null; // reset the interval

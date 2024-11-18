@@ -1,0 +1,144 @@
+{
+    "ParkingLots": [
+        {
+            "LotName": "Donnelly",
+            "FileImage": "Donnely.png",
+            "TotalSpace": 42,
+            "Comments": [],
+            "isFull": false,
+            "PermitRequired": true,
+            "ParkingSpaces": [
+                {
+                    "SpaceID": 0,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Filled",
+                    "TimeLeft": 1000
+                },
+                {
+                    "SpaceID": 1,
+                    "SpaceType": "Faculty",
+                    "Handicap": false,
+                    "Status": "Filled",
+                    "TimeLeft": 500
+                },
+                {
+                    "SpaceID": 2,
+                    "SpaceType": "Faculty",
+                    "Handicap": true,
+                    "Status": "Filled",
+                    "TimeLeft": 400
+                },
+                {
+                    "SpaceID": 3,
+                    "SpaceType": "Faculty",
+                    "Handicap": false,
+                    "Status": "Filled",
+                    "TimeLeft": 200
+                },
+                {
+                    "SpaceID": 4,
+                    "SpaceType": "Student",
+                    "Handicap": true,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 5,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 6,
+                    "SpaceType": "Security",
+                    "Handicap": true,
+                    "Status": "Filled",
+                    "TimeLeft": 200
+                },
+                {
+                    "SpaceID": 7,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Filled",
+                    "TimeLeft": 200
+                },
+                {
+                    "SpaceID": 8,
+                    "SpaceType": "Faculty",
+                    "Handicap": false,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 9,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 10,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 11,
+                    "SpaceType": "Faculty",
+                    "Handicap": true,
+                    "Status": "Filled",
+                    "TimeLeft": 2000
+                }
+
+            ]
+        },
+        {
+            "LotName": "McCann",
+            "FileImage": "McCann.png",
+            "TotalSpace": 120,
+            "Comments": [],
+            "isFull": false,
+            "PermitRequired": false,
+            "ParkingSpaces": []
+        },
+        {
+            "LotName": "Midrise",
+            "FileImage": "Midrise.png",
+            "TotalSpace": 30,
+            "Comments": [],
+            "isFull": false,
+            "PermitRequired": true,
+            "ParkingSpaces": []
+        },
+        {
+            "LotName": "Upperwest Cedar",
+            "FileImage": "UWC.png",
+            "TotalSpace": 20,
+            "Comments": [],
+            "isFull": false,
+            "PermitRequired": true,
+            "ParkingSpaces": []
+        },
+        {
+            "LotName": "Lowerwest Cedar",
+            "FileImage": "LWC.png",
+            "TotalSpace": 12,
+            "Comments": [],
+            "isFull": false,
+            "PermitRequired": true,
+            "ParkingSpaces": []
+        },
+        {
+            "LotName": "Foy",
+            "FileImage": "Foy.png",
+            "TotalSpace": 42,
+            "Comments": [],
+            "isFull": false,
+            "PermitRequired": true,
+            "ParkingSpaces": []
+        }
+    ]
+}
