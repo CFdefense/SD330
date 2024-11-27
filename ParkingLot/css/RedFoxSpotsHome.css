@@ -1,0 +1,111 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#nav-element {
+    display: flex;
+    align-items: center;
+    background-color: rgb(236, 15, 15);
+    z-index: 3;
+}
+
+#nav-element img {
+    width: 175px;
+    height: 100px;
+}
+
+#nav-element h1 {
+    margin: 0;
+    color: white;
+    font-size: 1.8em;
+    margin-left: -30px;
+}
+
+#nav-element .nav-links {
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
+    padding: 40px;
+    font-size: 1.5em;
+}
+
+#nav-element .nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+#hero-element {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -28px;
+}
+
+#banner-element {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    margin: 20px 0;
+}
+
+#banner-element img {
+    width: 1500px;
+    height: 600px;
+    object-fit: cover;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.7);
+}
+
+#hero-element h2 {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 4.5em;
+    padding: 20px;
+    margin: 0;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 2);
+}
+
+#sales-element {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.sales-item {
+    width: 30%;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: lightgrey;
+    padding: 20px;
+}
+
+.sales-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.sales-item p {
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+}
