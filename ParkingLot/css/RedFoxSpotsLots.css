@@ -95,3 +95,41 @@ footer {
     background-color: #f1f1f1;
     width: 100%;
 }
+
+#comments-container {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.comment {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.no-comments {
+    background-color: #ffecb3;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    color: #ff9800;
+    border: 1px solid #ff9800;
+    border-radius: 5px;
+}
+
+.comment:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}

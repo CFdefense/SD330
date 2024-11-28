@@ -4,7 +4,11 @@
             "LotName": "Donnelly",
             "FileImage": "Donnelly.png",
             "TotalSpace": 42,
-            "Comments": [],
+            "Comments": [
+                "This lot stinks!",
+                "Never go here after 5PM, there is no parking",
+                "I Finally found a spot!"
+            ],
             "isFull": false,
             "PermitRequired": true,
             "ParkingSpaces": [
