@@ -96,35 +96,302 @@
                     "Status": "Filled",
                     "TimeLeft": 2000
                 }
-
             ]
         },
         {
             "LotName": "McCann",
             "FileImage": "McCann.jpg",
             "TotalSpace": 120,
-            "Comments": [],
+            "Comments": [
+                "Leg Day!!!",
+                "Time for the gym, but no parking :(",
+                "Always so full..."
+            ],
             "isFull": false,
             "PermitRequired": false,
-            "ParkingSpaces": []
+            "ParkingSpaces": [
+                {
+                    "SpaceID": 0,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Filled",
+                    "TimeLeft": 1000
+                },
+                {
+                    "SpaceID": 1,
+                    "SpaceType": "Faculty",
+                    "Handicap": false,
+                    "Status": "Filled",
+                    "TimeLeft": 500
+                },
+                {
+                    "SpaceID": 2,
+                    "SpaceType": "Faculty",
+                    "Handicap": true,
+                    "Status": "Filled",
+                    "TimeLeft": 400
+                },
+                {
+                    "SpaceID": 3,
+                    "SpaceType": "Faculty",
+                    "Handicap": false,
+                    "Status": "Filled",
+                    "TimeLeft": 200
+                },
+                {
+                    "SpaceID": 4,
+                    "SpaceType": "Student",
+                    "Handicap": true,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 5,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 6,
+                    "SpaceType": "Security",
+                    "Handicap": true,
+                    "Status": "Filled",
+                    "TimeLeft": 200
+                },
+                {
+                    "SpaceID": 7,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Filled",
+                    "TimeLeft": 200
+                },
+                {
+                    "SpaceID": 8,
+                    "SpaceType": "Faculty",
+                    "Handicap": false,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 9,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 10,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 11,
+                    "SpaceType": "Faculty",
+                    "Handicap": true,
+                    "Status": "Filled",
+                    "TimeLeft": 2000
+                }
+            ]
         },
         {
             "LotName": "Midrise",
             "FileImage": "Midrise.jpg",
             "TotalSpace": 30,
-            "Comments": [],
+            "Comments": [
+                "This is the best parking spot",
+                "I got booted, are you serious.",
+                "Whoever took my spot, I will find you",
+                "Finally found a spot :)"
+            ],
             "isFull": false,
             "PermitRequired": true,
-            "ParkingSpaces": []
+            "ParkingSpaces": [
+                {
+                    "SpaceID": 0,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Filled",
+                    "TimeLeft": 1000
+                },
+                {
+                    "SpaceID": 1,
+                    "SpaceType": "Faculty",
+                    "Handicap": false,
+                    "Status": "Filled",
+                    "TimeLeft": 500
+                },
+                {
+                    "SpaceID": 2,
+                    "SpaceType": "Faculty",
+                    "Handicap": true,
+                    "Status": "Filled",
+                    "TimeLeft": 400
+                },
+                {
+                    "SpaceID": 3,
+                    "SpaceType": "Faculty",
+                    "Handicap": false,
+                    "Status": "Filled",
+                    "TimeLeft": 200
+                },
+                {
+                    "SpaceID": 4,
+                    "SpaceType": "Student",
+                    "Handicap": true,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 5,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 6,
+                    "SpaceType": "Security",
+                    "Handicap": true,
+                    "Status": "Filled",
+                    "TimeLeft": 200
+                },
+                {
+                    "SpaceID": 7,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Filled",
+                    "TimeLeft": 200
+                },
+                {
+                    "SpaceID": 8,
+                    "SpaceType": "Faculty",
+                    "Handicap": false,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 9,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 10,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 11,
+                    "SpaceType": "Faculty",
+                    "Handicap": true,
+                    "Status": "Filled",
+                    "TimeLeft": 2000
+                }
+            ]
         },
         {
             "LotName": "Upperwest Cedar",
             "FileImage": "UWC.jpg",
             "TotalSpace": 20,
-            "Comments": [],
+            "Comments": [
+                "This lot is always so empty",
+                "After christmas break the lot has gotten so full",
+                "Someone hit my car!"
+            ],
             "isFull": false,
             "PermitRequired": true,
-            "ParkingSpaces": []
+            "ParkingSpaces": [
+                {
+                    "SpaceID": 0,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Filled",
+                    "TimeLeft": 1000
+                },
+                {
+                    "SpaceID": 1,
+                    "SpaceType": "Faculty",
+                    "Handicap": false,
+                    "Status": "Filled",
+                    "TimeLeft": 500
+                },
+                {
+                    "SpaceID": 2,
+                    "SpaceType": "Faculty",
+                    "Handicap": true,
+                    "Status": "Filled",
+                    "TimeLeft": 400
+                },
+                {
+                    "SpaceID": 3,
+                    "SpaceType": "Faculty",
+                    "Handicap": false,
+                    "Status": "Filled",
+                    "TimeLeft": 200
+                },
+                {
+                    "SpaceID": 4,
+                    "SpaceType": "Student",
+                    "Handicap": true,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 5,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 6,
+                    "SpaceType": "Security",
+                    "Handicap": true,
+                    "Status": "Filled",
+                    "TimeLeft": 200
+                },
+                {
+                    "SpaceID": 7,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Filled",
+                    "TimeLeft": 200
+                },
+                {
+                    "SpaceID": 8,
+                    "SpaceType": "Faculty",
+                    "Handicap": false,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 9,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 10,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 11,
+                    "SpaceType": "Faculty",
+                    "Handicap": true,
+                    "Status": "Filled",
+                    "TimeLeft": 2000
+                }
+            ]
         },
         {
             "LotName": "Lowerwest Cedar",
@@ -133,13 +400,102 @@
             "Comments": [],
             "isFull": false,
             "PermitRequired": true,
-            "ParkingSpaces": []
+            "ParkingSpaces": [
+                {
+                    "SpaceID": 0,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Filled",
+                    "TimeLeft": 1000
+                },
+                {
+                    "SpaceID": 1,
+                    "SpaceType": "Faculty",
+                    "Handicap": false,
+                    "Status": "Filled",
+                    "TimeLeft": 500
+                },
+                {
+                    "SpaceID": 2,
+                    "SpaceType": "Faculty",
+                    "Handicap": true,
+                    "Status": "Filled",
+                    "TimeLeft": 400
+                },
+                {
+                    "SpaceID": 3,
+                    "SpaceType": "Faculty",
+                    "Handicap": false,
+                    "Status": "Filled",
+                    "TimeLeft": 200
+                },
+                {
+                    "SpaceID": 4,
+                    "SpaceType": "Student",
+                    "Handicap": true,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 5,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 6,
+                    "SpaceType": "Security",
+                    "Handicap": true,
+                    "Status": "Filled",
+                    "TimeLeft": 200
+                },
+                {
+                    "SpaceID": 7,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Filled",
+                    "TimeLeft": 200
+                },
+                {
+                    "SpaceID": 8,
+                    "SpaceType": "Faculty",
+                    "Handicap": false,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 9,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 10,
+                    "SpaceType": "Security",
+                    "Handicap": false,
+                    "Status": "Empty",
+                    "TimeLeft": -1
+                },
+                {
+                    "SpaceID": 11,
+                    "SpaceType": "Faculty",
+                    "Handicap": true,
+                    "Status": "Filled",
+                    "TimeLeft": 2000
+                }
+            ]
         },
         {
             "LotName": "Foy",
             "FileImage": "Foy.jpg",
-            "TotalSpace": 42,
-            "Comments": [],
+            "TotalSpace": 0,
+            "Comments": [
+                "Why cant I park here, I live here!",
+                "Free parking after 5 PM",
+                "Why is this a teachers lot"
+            ],
             "isFull": false,
             "PermitRequired": true,
             "ParkingSpaces": []
