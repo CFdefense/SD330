@@ -1,9 +1,10 @@
-body, html {
+html, body {
     height: 100%;
     margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     flex-direction: column;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: flex-start;
 }
 
 a {
@@ -38,9 +39,12 @@ a {
     font-size: 1.5em;
 }
 
-footer {
-    text-align: center;
-    margin-top: 50px;
+#parking-lots-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
     padding: 10px;
 }
 
@@ -48,12 +52,14 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
 }
 
 .parking-lot img {
@@ -61,23 +67,6 @@ footer {
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.lot-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.lot-info h2 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-.lot-details {
-    text-align: center;
     margin-bottom: 10px;
 }
 
@@ -97,4 +86,12 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    width: 100%;
 }

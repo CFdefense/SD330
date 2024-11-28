@@ -2,7 +2,7 @@
     "ParkingLots": [
         {
             "LotName": "Donnelly",
-            "FileImage": "Donnelly.jpg",
+            "FileImage": "Donnelly.png",
             "TotalSpace": 42,
             "Comments": [],
             "isFull": false,

@@ -11,6 +11,12 @@ a {
     text-decoration: none;
 }
 
+img {
+    width: 500px;
+    height: 500px;
+    
+}
+
 #nav-element {
     display: flex;
     align-items: center;
@@ -42,4 +48,59 @@ footer {
     text-align: center;
     margin-top: 50px;
     padding: 10px;
+}
+
+.parking-space {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.parking-space:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+.parking-space h2 {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.parking-space p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+#spaces-list {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 40px;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin-top: 75px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff0000;
+    color: white;
+}
+
+button:hover {
+    background-color: #940000;
 }
