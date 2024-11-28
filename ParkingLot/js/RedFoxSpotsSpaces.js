@@ -11,11 +11,6 @@ async function loadParkingLotDetails() {
     // Find the parking lot that matches the lotName
     const parkingLot = data.ParkingLots.find(lot => lot.LotName === lotName);
     
-    if (!parkingLot) {
-        console.error('Parking lot not found');
-        return;
-    }
-    
     // Display the parking lot image
     const lotImageContainer = document.getElementById('lot-image-container');
     const lotImage = document.createElement('img');
@@ -36,10 +31,10 @@ async function loadParkingLotDetails() {
     const spacesContainer = document.getElementById('spaces-list');
     
     if (parkingLot.ParkingSpaces.length === 0) {
-        // If no parking spaces are found, display a message
+        // If no parking spaces are found, display none found message
         const noSpacesMessage = document.createElement('p');
         noSpacesMessage.innerText = "No parking spots available";
-        noSpacesMessage.style.fontSize = '1.5em';
+        noSpacesMessage.style.fontSize = '2.5em';
         noSpacesMessage.style.color = 'red';
         spacesContainer.appendChild(noSpacesMessage);
     } else {
@@ -48,6 +43,7 @@ async function loadParkingLotDetails() {
             const spaceDiv = document.createElement('div');
             spaceDiv.className = 'parking-space';
 
+            // Conditionally Render Spot Information
             spaceDiv.innerHTML = `
                 <p>Space ID: ${space.SpaceID}</p>
                 <p>Space Type: ${space.SpaceType}</p>
