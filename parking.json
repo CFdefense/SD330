@@ -2,7 +2,7 @@
     "ParkingLots": [
         {
             "LotName": "Donnelly",
-            "FileImage": "Donnely.png",
+            "FileImage": "Donnelly.jpg",
             "TotalSpace": 42,
             "Comments": [],
             "isFull": false,
@@ -97,7 +97,7 @@
         },
         {
             "LotName": "McCann",
-            "FileImage": "McCann.png",
+            "FileImage": "McCann.jpg",
             "TotalSpace": 120,
             "Comments": [],
             "isFull": false,
@@ -106,7 +106,7 @@
         },
         {
             "LotName": "Midrise",
-            "FileImage": "Midrise.png",
+            "FileImage": "Midrise.jpg",
             "TotalSpace": 30,
             "Comments": [],
             "isFull": false,
@@ -115,7 +115,7 @@
         },
         {
             "LotName": "Upperwest Cedar",
-            "FileImage": "UWC.png",
+            "FileImage": "UWC.jpg",
             "TotalSpace": 20,
             "Comments": [],
             "isFull": false,
@@ -124,7 +124,7 @@
         },
         {
             "LotName": "Lowerwest Cedar",
-            "FileImage": "LWC.png",
+            "FileImage": "LWC.jpg",
             "TotalSpace": 12,
             "Comments": [],
             "isFull": false,
@@ -133,7 +133,7 @@
         },
         {
             "LotName": "Foy",
-            "FileImage": "Foy.png",
+            "FileImage": "Foy.jpg",
             "TotalSpace": 42,
             "Comments": [],
             "isFull": false,

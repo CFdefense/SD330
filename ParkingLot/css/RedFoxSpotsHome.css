@@ -6,6 +6,11 @@ body, html {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 #nav-element {
     display: flex;
     align-items: center;
@@ -33,11 +38,6 @@ body, html {
     font-size: 1.5em;
 }
 
-#nav-element .nav-links a {
-    color: white;
-    text-decoration: none;
-}
-
 #hero-element {
     position: relative;
     display: flex;
@@ -45,7 +45,7 @@ body, html {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: -28px;
+    margin-top: 50px;
 }
 
 #banner-element {
@@ -59,8 +59,9 @@ body, html {
 
 #banner-element img {
     width: 1500px;
-    height: 600px;
+    height: 550px;
     object-fit: cover;
+    border-radius: 1%;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.7);
 }
 
@@ -74,38 +75,67 @@ body, html {
     text-shadow: 10px 10px 20px rgba(0, 0, 0, 2);
 }
 
+#hero-element button {
+    position: absolute;
+    z-index: 2;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    bottom: 20%;
+    right: 45%
+}
+
+#hero-element button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
 #sales-element {
     display: flex;
-    justify-content: space-between;
-    padding: 40px 20px;
-    gap: 20px;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
 }
 
 .sales-item {
-    width: 30%;
+    width: 400px;
+    height: 300px;
     text-align: center;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.7);
     background-color: lightgrey;
     padding: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+.sales-item:hover {
+    background-color: gray;
+    transform: scale(1.05);
+}
+
+
 .sales-item img {
-    width: 100%;
-    height: auto;
+    width: 200px;
+    height: 200px;
     border-radius: 10px;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .sales-item p {
-    font-size: 1.1em;
-    color: #333;
-    margin-top: 10px;
+    font-size: 1.5em;
+    color: #000000;
+    margin-top: 30px;
 }
 
 footer {
     text-align: center;
-    margin-top: auto;
+    margin-top: 50px;
     padding: 10px;
 }
